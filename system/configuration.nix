@@ -12,6 +12,7 @@
       ./modules/fonts.nix
       ./modules/gtk.nix
       ./modules/nix.nix
+      ./modules/zsh.nix
       ./modules/qt.nix
       ./config.nix
     ];
@@ -70,19 +71,5 @@
 
   hardware.cpu.intel.updateMicrocode = true;
 
-  programs.zsh = {
-    enable = true;
-    autosuggestions.enable = true;
-    syntaxHighlighting.enable = true;
-    shellAliases = {
-      x="xclip -selection c -i";
-      c="xclip -selection c -i -f";
-      v="xclip -selection c -o";
-      ls="exa --color=always -l --group-directories-first";
-      ll="exa --color=always -al --group-directories-first";
-    };
-  };
-
   environment.shells = [ pkgs.zsh ];
 }
-
