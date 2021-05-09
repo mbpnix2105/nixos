@@ -6,6 +6,7 @@
     ./modules/gtk.nix
     ./modules/neovim.nix
     ./modules/programs.nix
+    ./modules/pkgs.nix
     ./modules/services.nix
     ./modules/zsh.nix
   ];
