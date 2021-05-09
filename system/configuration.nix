@@ -72,4 +72,6 @@
   hardware.cpu.intel.updateMicrocode = true;
 
   environment.shells = [ pkgs.zsh ];
+
+  services.udisks2.enable = true;
 }

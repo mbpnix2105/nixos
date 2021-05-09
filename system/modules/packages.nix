@@ -13,6 +13,8 @@
     exa
     firefox
     git
+    grub2
+    gptfdisk
     git-crypt
     htop
     keepassxc
@@ -20,6 +22,8 @@
     nano
     neofetch
     pavucontrol
+    gparted
+    parted
     rsync
     sweet
     sxiv
