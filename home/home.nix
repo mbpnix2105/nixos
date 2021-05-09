@@ -2,11 +2,12 @@
 
 {
   imports = [
+    ./modules/alacritty.nix
     ./modules/git.nix
     ./modules/gtk.nix
     ./modules/neovim.nix
-    ./modules/programs.nix
     ./modules/pkgs.nix
+    ./modules/programs.nix
     ./modules/services.nix
     ./modules/zsh.nix
   ];
