@@ -35,5 +35,7 @@
     xsel
   ] ++ (with pkgs.xorg; [
     xkill
+  ]) ++ (with pkgs.gnome3; [
+    gnome-disk-utility
   ]);
 }
