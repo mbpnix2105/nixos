@@ -2,9 +2,11 @@
 
 {
   imports = [
-    ./modules/neovim.nix
     ./modules/git.nix
     ./modules/gtk.nix
+    ./modules/neovim.nix
+    ./modules/programs.nix
+    ./modules/services.nix
     ./modules/zsh.nix
   ];
 

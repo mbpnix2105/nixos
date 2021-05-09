@@ -5,10 +5,10 @@
     enable = true;
     userName = "mbpnix2105";
     userEmail = "mbpnix2105@protonmail.com";
-#    signing = {
-#      signByDefault = true;
-#      key = "72DAFC99";
-#    };
+    signing = {
+      signByDefault = true;
+      key = "72DAFC99";
+    };
     extraConfig = {
       core.editor = "vim";
       github.username = "mbpnix2105";
