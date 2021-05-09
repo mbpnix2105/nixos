@@ -11,7 +11,7 @@
       {
         "github.com" = {
           user = "git";
-          identityFile = "${home}/.ssh/key.pub";
+          identityFile = "${home}/.ssh/id_ed25519";
           identitiesOnly = true;
         };
       };
@@ -26,16 +26,5 @@
   programs.gpg = {
     enable = true;
     settings = { homedir = ".gnupg"; };
-  };
-
-  services.gpg-agent = {
-    enable = true;
-    enableSshSupport = true;
-    defaultCacheTtl = 60;
-    defaultCacheTtlSsh = 60;
-    maxCacheTtl = 60;
-    maxCacheTtlSsh = 60;
-    pinentryFlavor = "gtk2";
-    sshKeys = [ "6F108BEA85A44CEE1495B3626F668D412CAF081D" ];
   };
 }

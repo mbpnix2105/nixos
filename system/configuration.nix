@@ -74,4 +74,20 @@
   environment.shells = [ pkgs.zsh ];
 
   services.udisks2.enable = true;
+
+  systemd.targets.machines.enable = true;
+  systemd.nspawn."archlinux" = {
+    enable = true;
+    execConfig = {
+      Boot = true;
+    };
+    networkConfig = {
+      Private = false;
+    };
+  };
+  systemd.services."systemd-nspawn@archlinux" = {
+    enable = true;
+    wantedBy = [ "machines.target" ];
+  };
+
 }
