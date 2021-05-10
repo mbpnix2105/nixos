@@ -3,18 +3,19 @@
 {
   imports =
     [
+      ./config.nix
       ./hardware-configuration.nix
-      ./modules/packages.nix
-      ./modules/services.nix
-      ./modules/security.nix
-      ./modules/xserver.nix
-      ./modules/sound.nix
       ./modules/fonts.nix
       ./modules/gtk.nix
       ./modules/nix.nix
-      ./modules/zsh.nix
+      ./modules/packages.nix
       ./modules/qt.nix
-      ./config.nix
+      ./modules/security.nix
+      ./modules/services.nix
+      ./modules/sound.nix
+      ./modules/virtualisation.nix
+      ./modules/xserver.nix
+      ./modules/zsh.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
@@ -74,20 +75,4 @@
   environment.shells = [ pkgs.zsh ];
 
   services.udisks2.enable = true;
-
-  systemd.targets.machines.enable = true;
-  systemd.nspawn."archlinux" = {
-    enable = true;
-    execConfig = {
-      Boot = true;
-    };
-    networkConfig = {
-      Private = false;
-    };
-  };
-  systemd.services."systemd-nspawn@archlinux" = {
-    enable = true;
-    wantedBy = [ "machines.target" ];
-  };
-
 }
