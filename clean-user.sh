@@ -1,4 +1,4 @@
 #!/bin/sh
 
-nix-collect-garbage -d                                                                                                                                 (master)
+nix-collect-garbage -d
 

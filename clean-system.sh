@@ -1,4 +1,4 @@
 #!/bin/sh
 
-sudo nix-collect-garbage -d                                                                                                                                 (master)
+sudo nix-collect-garbage -d
 
