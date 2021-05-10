@@ -9,5 +9,5 @@
 
 # GitHub: https://github.com/mbpnix2105
 
-nix build .#nixos -L
+nix build .#nixosConfigurations.nixos.config.system.build.toplevel -L
 
