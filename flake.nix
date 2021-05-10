@@ -43,8 +43,6 @@
               home-manager.users.mbpnix = { ... }: { imports = [ ./home/home.nix ]; };
               environment.shellAliases = {
                 nix-repl = "nix repl ${inputs.utils.lib.repl}";
-                ls = "exa --color=always --icons -l --group-directories-first";
-                ll = "exa --color=always --icons -al --group-directories-first";
               };
             })
           ];
