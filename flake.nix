@@ -51,6 +51,15 @@
 
       sharedOverlays = [
         self.overlay
+
+        (self: super: rec {
+          arc-theme = super.arc-theme.overrideAttrs (_: {
+            configureFlags = [
+              "--disable-unity --disable-cinnamon --disable-gnome-shell"
+            ];
+          });
+        })
+
       ];
 
       overlay = import ./system/overlays/packages.nix;
