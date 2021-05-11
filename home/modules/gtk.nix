@@ -3,8 +3,8 @@
 {
   gtk = {
     enable = true;
-    iconTheme.name = "Arc";
-    iconTheme.package = pkgs.arc-icon-theme;
+    iconTheme.name = "Kora";
+    iconTheme.package = pkgs.kora-icon-theme;
     theme.name = "Sweet-Dark";
     theme.package = pkgs.sweet;
   };

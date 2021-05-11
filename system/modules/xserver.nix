@@ -24,7 +24,7 @@
 
   services.xserver.displayManager.lightdm.greeters.gtk = {
     theme.name = "Sweet-Dark";
-    iconTheme.name = "Arc";
+    iconTheme.name = "Kora";
     cursorTheme.name = "Capitaine Cursors";
     clock-format = "%H:%M";
     indicators = [

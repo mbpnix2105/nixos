@@ -3,8 +3,6 @@
 {
   environment.systemPackages = with pkgs; [
     acpi
-    arc-icon-theme
-    arc-theme
     bleachbit
     brave
     capitaine-cursors
@@ -13,17 +11,18 @@
     exa
     firefox
     git
-    grub2
-    gptfdisk
     git-crypt
+    gparted
+    gptfdisk
+    grub2
     htop
     keepassxc
+    kora-icon-theme
     kotatogram-desktop
     nano
     neofetch
-    pavucontrol
-    gparted
     parted
+    pavucontrol
     rsync
     sweet
     sxiv
