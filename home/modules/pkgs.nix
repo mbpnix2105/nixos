@@ -7,6 +7,7 @@
     bc
     etcher
     exa
+    gimp-with-plugins
     google-cloud-sdk
     hping
     htop
