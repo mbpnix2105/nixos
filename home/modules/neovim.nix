@@ -24,6 +24,7 @@
       syntax on
     '';
     plugins = [
+      pkgs.vimPlugins.dracula-vim
       pkgs.vimPlugins.gruvbox
       pkgs.vimPlugins.vim-nix
     ];

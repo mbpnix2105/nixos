@@ -4,11 +4,34 @@
   programs.alacritty = {
     enable = true;
     settings = {
+      env.TERM = "xterm-256color";
       window.title = "Alacritty";
       window.decorations = "none";
       window.dynamic_title = false;
       window.startup_mode = "Maximized";
       window.dynamic_padding = true;
+      key_bindings = [
+        {
+          key = "V";
+          mods = "Control|Shift";
+          action = "Paste";
+        }
+        {
+          key = "C";
+          mods = "Control|Shift";
+          action = "Copy";
+        }
+        {
+          key = "Up";
+          mods = "Control|Shift";
+          action = "ScrollPageUp";
+        }
+        {
+          key = "Down";
+          mods = "Control|Shift";
+          action = "ScrollPageDown";
+        }
+      ];
       cursor = {
         style.shape = "Block";
         style.blinking = "Always";
