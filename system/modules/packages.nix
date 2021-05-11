@@ -12,6 +12,7 @@
     firefox
     git
     git-crypt
+    glxinfo
     gparted
     gptfdisk
     grub2
@@ -19,10 +20,12 @@
     keepassxc
     kora-icon-theme
     kotatogram-desktop
+    lshw
     nano
     neofetch
     parted
     pavucontrol
+    pciutils
     rsync
     sweet
     sxiv
