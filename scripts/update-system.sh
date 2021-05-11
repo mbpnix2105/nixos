@@ -9,5 +9,7 @@
 
 # GitHub: https://github.com/mbpnix2105
 
-sudo nixos-rebuild switch --flake .#nixos -L
+pushd ../
+nix flake update --commit-lock-file
+popd
 

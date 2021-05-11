@@ -13,7 +13,7 @@
       ./modules/security.nix
       ./modules/services.nix
       ./modules/sound.nix
-      ./modules/virtualisation.nix
+#     ./modules/virtualisation.nix
       ./modules/xserver.nix
       ./modules/zsh.nix
     ];

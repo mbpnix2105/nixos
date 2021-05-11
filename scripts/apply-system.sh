@@ -9,5 +9,7 @@
 
 # GitHub: https://github.com/mbpnix2105
 
-nix-collect-garbage -d
+pushd ../
+sudo nixos-rebuild switch --flake .#nixos -L
+popd
 
