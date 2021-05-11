@@ -1,5 +1,7 @@
 {config, pkgs, ...}:
 
+/* machinectl pull-tar --verify=no https://nspawn.org/storage/archlinux/archlinux/tar/image.tar.xz archlinux */
+
 {
   systemd.targets.machines.enable = true;
   systemd.nspawn."archlinux" = {

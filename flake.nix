@@ -27,7 +27,7 @@
       };
 
       channels.nixpkgs.overlaysBuilder = channels: [
-        (final: prev: { inherit (channels) nixpkgs-stable; })
+        (final: prev: { inherit (channels) nixpkgs-stable; /* pkgs */ })
       ];
 
       hosts = {
